@@ -7,13 +7,24 @@ include("pricing/mc.jl")
 include("models/model.jl")
 include("models/neva.jl")
 include("models/xos.jl")
+<<<<<<< HEAD
+include("models/csmodel.jl")
+include("models/fsmodel.jl")
+include("pricing/bs.jl")
+include("pricing/mc.jl")
+=======
+>>>>>>> develop
 
 # Generic financial model interface
 export fixvalue, fixjacobian, valuation!, valuation, solvent, numfirms
 # Model constructors
-export XOSModel, NEVAModel, EisenbergNoeModel, FurfineModel, LinearDebtRankModel
+<<<<<<< HEAD
+export XOSModel, NEVAModel, EisenbergNoeModel, FurfineModel, LinearDebtRankModel, CSModel, FSModel
+=======
+export XOSModel, NEVAModel, EisenbergNoeModel, FurfineModel, LinearDebtRankModel, ExAnteEN_BS_Model
+>>>>>>> develop
 # Model specifics
-export bookequity, equityview, debtview
+export bookequity, equityview, debtview, illiquid, init_a
 
 # Pricing helpers
 export BlackScholesParams, Aτ, discount

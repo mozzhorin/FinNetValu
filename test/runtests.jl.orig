@@ -11,6 +11,11 @@ end
     include("./utils/test_nets.jl")
 end
 
+<<<<<<< HEAD
+@testset "models" begin
+    include("./models/test_csmodel.jl")
+    include("./models/test_fsmodel.jl")
+=======
 @testset "pricing" begin
     include("./pricing/test_mc.jl")
     include("./pricing/test_bs.jl")
@@ -18,6 +23,5 @@ end
 
 @testset "models" begin
     include("./models/test_xos.jl")
-    include("./models/test_csmodel.jl")
-    include("./models/test_fsmodel.jl")
+>>>>>>> develop
 end
